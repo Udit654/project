@@ -1,0 +1,163 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>home</title>
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style type="text/css">
+   body{
+    background-image: url("study.jpg");
+   }
+    .header a{
+    	cursor: pointer;
+    }
+ 	.header{
+ 		    width: 949px;
+    margin: auto;
+    border-bottom: 1px solid #6669;
+    padding: 12px 1px 20px 5px;
+ 	}
+ 	.header_title{
+ 		font-size: 21px;
+        padding: 10px 10px 10px 10px;
+ 	}
+ 	.header_title i{
+        border: 1px solid transparent;
+    padding: 10px 40px 10px 40px;
+    border-radius: 8px;
+    background: #791d0e;
+    color: wheat;
+     	}
+ 	.header_details{
+ 		font-size: 21px;
+        padding: 10px 10px 10px 10px;
+ 	}
+ 	.header_details i{
+        border: 1px solid transparent;
+    padding: 10px 40px 10px 40px;
+    border-radius: 8px;
+    background: #791d0e;
+    color: wheat;
+ 	}
+ 	.header_apply{
+ 		font-size: 21px;
+        padding: 10px 10px 10px 10px;
+ 	}
+ 	.header_apply i{
+        border: 1px solid transparent;
+    padding: 10px 40px 10px 40px;
+    border-radius: 8px;
+    background: #791d0e;
+    color: wheat;
+ 	}
+ 	.header_user{
+ 		font-size: 21px;
+        padding: 10px 10px 10px 10px;
+ 	}
+ 	.header_user i{
+        border: 1px solid transparent;
+    padding: 10px 40px 10px 40px;
+    border-radius: 8px;
+    background: #791d0e;
+    color: wheat;
+ 	}
+ 	.header_logout{
+ 		font-size: 21px;
+        padding: 10px 10px 10px 10px;
+ 	}
+ 	.header_logout i{
+        border: 1px solid transparent;
+    padding: 10px 40px 10px 40px;
+    border-radius: 8px;
+    background: #791d0e;
+    color: wheat;
+ 	}
+    input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.one{
+    left: 30%;
+    position: absolute;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+}
+</style>
+ </style>
+ </head>
+ <body>
+    <div class="header">
+    	<a class="header_title" href="home.html"><i class="fa fa-home">&nbsp&nbspHome</i></a>
+    	<a class="header_details" href="detail.jsp"><i class="fa fa-id-card">&nbsp&nbspDetails</i></a>
+    	<a class="header_apply" href="apply.html"><i class="fa fa-wpforms">&nbsp&nbspApply</i></a>
+    	<a class="header_user"><i class="fa fa-user">&nbsp&nbspUser</i></a>
+    	<a class="header_logout" href="index.html"><i class="fa fa-sign-out">&nbsp&nbspLog Out</i></a>
+    </div>
+ <div class="one">
+<h3>Contact Form</h3>
+
+<div class="container">
+    <form action="details" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="fname">Contact</label>
+    <input type="text" id="contact" name="contact" placeholder="Your name..">
+    
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="india">INDIA</option>
+    </select>
+    
+    <label for="university">University</label>
+    <select id="university" name="university">
+      <option value="cu">chitkara university</option>
+      <option value="lpu">LPU</option>
+      <option value="nit">NIT</option>
+      <option value="mit">MIT</option>
+    </select>
+
+    <label for="plus2marks">+2CGPA</label>
+    <input type="text" id="plus2marks" name="plus2marks" placeholder="Your Class 12 Marks..">
+   
+    <label for="10_marks">10 Marks</label>
+    <input type="text" id="10_marks" name="10_marks" placeholder="Your Class 10 Marks..">
+
+    <label for="subject">Address</label>
+    <textarea id="subject" name="address" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+
+ </body>
+ </html>
